@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>订单管理</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        #wrap{
+            margin:0 auto;
+        }
+        #header{
+            border-bottom:1px solid #000000;
+            width:100%;
+            height:auto;
+        }
+        #imgContainer{
+            width:30%;
+            float:left;
+        }
+        img {
+            width: 80%;
+            margin-top: 10%;
+        }
+        #nameContainer {
+            width: 40%;
+            float: left;
+            margin-left: 2%;
+            margin-top: 5%;
+            text-align: center;
+        }
+        #nameText{
+            font-size:1em;
+            font-weight:500;
+        }
+        #btnContainer {
+            width: 25%;
+            float: right;
+            margin-left: 3%;
+            margin-top: 5%;
+        }
+        #btn {
+            background-color: green;
+            border-radius: 10%;
+            font-size: 1em;
+            width: 70%;
+            height: 50%;
+            color: white;
+            border-width:0;
+        }
+        #mainbody {
+            border-bottom: 1px solid #000000;
+            clear: both;
+        }
+        ul{
+            list-style:none;
+        }
+        li {
+            border-bottom: 1px solid #000000;
+            clear: both;
+            margin-top:10%;
+        }
+        .listName {
+            width: 70%;
+            float: left;
+            margin-left: 5%;
+            margin-top:3%;
+        }
+        .listText{
+            font-size:1em;
+            margin-top:5%;
+        }
+        .listSymbol{
+            width:20%;
+            float:left;
+            margin-right:5%;
+        }
+        .Symbol {
+            font-size: 2em;
+            margin-top:5%;
+            text-align:right;
+        }
+    </style>
+    <script type="text/javascript">
+        function identifyWin() {
+            window.location.href = 'IdentifyPage.html';
+        }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="imgContainer">
+               <img src="img/CANON 5D3.jpg"/>
+            </div>
+            <div id="nameContainer">
+               <span id="nameText">光影租赁公司</span>
+            </div>
+            <div id="btnContainer">
+                <input type="button" id="btn" value="认证" onclick="identifyWin()"/>
+            </div>
+        </div>
+        <div id="mainBody">
+            <ul>
+                <li>
+                    <div class="listName"><span class="listText">线上订单</span></div>
+                    <div class="listSymbol"><span class="Symbol">&gt;</span></div>
+                </li>
+                <li>
+                    <div class="listName"><span class="listText">线下订单</span></div>
+                    <div class="listSymbol"><span class="Symbol">&gt;</span></div>
+                </li>
+                <li>
+                    <div class="listName"><span class="listText">订单统计汇报</span></div>
+                    <div class="listSymbol"><span class="Symbol">&gt;</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
