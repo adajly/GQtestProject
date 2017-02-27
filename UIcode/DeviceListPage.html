@@ -112,16 +112,16 @@
     <script type="text/javascript">
         //定义类别数组
         var cate = new Array("摄像", "镜头", "录音", "灯光", "附件");
-        var deviceList1 = new Array(["CANON 5D3", "配件：电池2块，读卡器1个，SD卡1张", "img/CANON 5D3.jpg", "200元/天"],
-                                   ["AJ—HPX 3700", "配件：电池2块，读卡器1个，SD卡1张", "img/AJ—HPX 3700.jpg", "200元/天"]);
-        var deviceList2 = new Array(["canonEF50mmf1.2L", "配件：电池2块，读卡器1个，SD卡1张", "img/canonEF50mmf1.2L.jpg", "200元/天"],
-                                   ["canonEF24-70mmf2.8L", "配件：电池2块，读卡器1个，SD卡1张", "img/canonEF24-70mmf2.8L.jpg", "200元/天"]);
-        var deviceList3 = new Array(["森海 416话筒", "配件：电池2块，读卡器1个，SD卡1张", "img/森海 416话筒.jpg", "200元/天"],
-                                   ["罗德 NTG3", "配件：电池2块，读卡器1个，SD卡1张", "img/罗德 NTG3.jpg", "200元/天"]);
-        var deviceList4 = new Array(["钨丝灯 1000W", "配件：电池2块，读卡器1个，SD卡1张", "img/钨丝灯 1000W.jpg", "200元/天"],
-                                   ["摘灯 575W", "配件：电池2块，读卡器1个，SD卡1张", "img/摘灯 575W.jpg", "200元/天"]);
-        var deviceList5 = new Array(["3米小摇臂", "配件：电池2块，读卡器1个，SD卡1张", "img/3米小摇臂.jpg", "200元/天"],
-                                   ["鲨鱼滑轨", "配件：电池2块，读卡器1个，SD卡1张", "img/鲨鱼滑轨.jpg", "200元/天"]);
+        var deviceList1 = new Array(["CANON 5D3", "配件：电池2块，读卡器1个，SD卡1张", "img/CANON 5D3.jpg", "200元/天","20"],
+                                   ["AJ—HPX 3700", "配件：电池2块，读卡器1个，SD卡1张", "img/AJ—HPX 3700.jpg", "200元/天","23"]);
+        var deviceList2 = new Array(["canonEF50mmf1.2L", "配件：电池2块，读卡器1个，SD卡1张", "img/canonEF50mmf1.2L.jpg", "200元/天","22"],
+                                   ["canonEF24-70mmf2.8L", "配件：电池2块，读卡器1个，SD卡1张", "img/canonEF24-70mmf2.8L.jpg", "200元/天","26"]);
+        var deviceList3 = new Array(["森海 416话筒", "配件：电池2块，读卡器1个，SD卡1张", "img/森海 416话筒.jpg", "200元/天","27"],
+                                   ["罗德 NTG3", "配件：电池2块，读卡器1个，SD卡1张", "img/罗德 NTG3.jpg", "200元/天","22"]);
+        var deviceList4 = new Array(["钨丝灯 1000W", "配件：电池2块，读卡器1个，SD卡1张", "img/钨丝灯 1000W.jpg", "200元/天","45"],
+                                   ["摘灯 575W", "配件：电池2块，读卡器1个，SD卡1张", "img/摘灯 575W.jpg", "200元/天","21"]);
+        var deviceList5 = new Array(["3米小摇臂", "配件：电池2块，读卡器1个，SD卡1张", "img/3米小摇臂.jpg", "200元/天","20"],
+                                   ["鲨鱼滑轨", "配件：电池2块，读卡器1个，SD卡1张", "img/鲨鱼滑轨.jpg", "200元/天","30"]);
         var list = new Array(deviceList1, deviceList2, deviceList3, deviceList4, deviceList5);
         
         window.onload = function () {
@@ -166,7 +166,7 @@
                 idiv2.setAttribute("class", "TextContainer");
                 var iSpan1 = document.createElement("span");
                 iSpan1.setAttribute("class", "sp1");
-                iSpan1.innerHTML = "已售30";
+                iSpan1.innerHTML = "已售"+arr[i][4];
                 idiv2.appendChild(iSpan1);
                 idiv1.appendChild(idiv2);
 
